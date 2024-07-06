@@ -43,7 +43,7 @@ if st.sidebar.button('Clear Chat History', on_click=clear_chat_history):
 
 # Button to start a new chat
 if st.sidebar.button('New Chat'):
-    st.session_state.messages = [{"role": "assistant", "content": "How may I assist you today?"}]
+    st.session_state.messages = [{"role": "assistant", "content": "Hello. How may I assist you today?"}]
 
 # Function for generating OpenAI response
 def generate_openai_response(model, prompt_input):
